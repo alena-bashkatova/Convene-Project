@@ -1,0 +1,27 @@
+.red-cross {
+    background-color: #ff5958;
+
+    &::before {
+        position: absolute;
+        top: 7px;
+        left: 4px;
+        display: block;
+        width: 10px;
+        height: 3px;
+        background-color: white;
+        content: '';
+        @include rotate(45deg);
+    }
+
+    &::after {
+        position: absolute;
+        top: 7px;
+        left: 4px;
+        display: block;
+        width: 10px;
+        height: 3px;
+        background-color: white;
+        content: '';
+        @include rotate(-45deg);
+    }
+}

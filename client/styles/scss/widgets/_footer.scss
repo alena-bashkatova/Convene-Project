@@ -1,0 +1,31 @@
+footer {
+    padding: 38px 0;
+
+    .logo-footer{
+        @include breakpoint(extra-small) {
+            margin-top: 53px;
+            text-align: center;
+        }
+        @include breakpoint(narrow-phone) {
+            text-align: center;
+        }
+    }
+
+    p {
+        margin: 0;
+        font-family: "Opan Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: right;
+        color: #494a4a;
+        @include breakpoint(extra-small) {
+            margin-bottom: 7px;
+            line-height: 129px;
+            text-align: center;
+        }
+        @include breakpoint(narrow-phone) {
+            text-align: center;
+        }
+    }
+}

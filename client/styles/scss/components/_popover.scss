@@ -1,0 +1,13 @@
+.popover {
+  width: 170px;
+  background-color: #f7f8f8;
+  font: normal 13px "Opan Sans", sans-serif;
+  color: #676767;
+
+    .errow {
+        background-color: #f7f8f8;
+        &:after{
+            background-color: #f7f8f8;
+        }
+    }
+}

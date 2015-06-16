@@ -1,0 +1,158 @@
+.form {
+    //display: none;
+    max-width: 530px;
+    width: 100%;
+    margin: auto;
+    margin-top: 93px;
+    margin-bottom: 178px;
+    padding: 0 15px;
+
+    .buttons-top {
+        margin-bottom: 20px;
+        font-size: 0;
+
+        li {
+            display: inline-block;
+            width: 50%;
+            margin: 0;
+            border: 1px solid #e7e7e7;
+            background-color: #f8f8f8;
+            text-align: center;
+            @include box-shadow(0 1px 2px 0px #e7e7e7);
+            @include transition-property(background-color);
+            @include transition-duration(400ms);
+            &:hover, &:active {
+                background-color: #efefef;
+            }
+
+            a {
+                font-family: 'Opan Sans', sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                text-decoration: none;
+                color: #6c6c6c;
+                @include breakpoint(narrow-phone) {
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .sign-up {
+            padding: 20px 10px;
+            @include border-radius(4px 0 0 4px);
+            @include breakpoint(narrow-phone) {
+                padding: 15px 9.6px;
+            }
+        }
+        .sign-in {
+            padding: 20px 14px;
+            @include border-radius(0 4px 4px 0);
+            @include breakpoint(narrow-phone) {
+                padding: 15px 13px;
+            }
+        }
+
+        .active {
+            border: 1px solid #287fbe;
+            background-color: #52a6e5;
+            @include box-shadow(0 1px 0px 0 rgba(#ffffff, 0.5)  inset);
+            &:hover, &:active {
+                background-color: #52a6e5;
+            }
+
+            a {
+                color: white;
+                text-shadow: 1px 2px 0 #245e88;
+            }
+        }
+    }
+
+    form {
+        .input {
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 20px;
+                right: 9px;
+                width: 18px;
+                height: 18px;
+                @include border-radius(50%);
+                @include breakpoint(narrow-phone) {
+                    top: 15px;
+                }
+            }
+        }
+
+        .left {
+            float: left;
+            @include breakpoint(extra-small) {
+                width: 49%;
+            }
+            @include breakpoint(narrow-phone) {
+                width: 100%;
+            }
+        }
+
+        .right {
+            float: right;
+            @include breakpoint(extra-small) {
+                width: 49%;
+            }
+            @include breakpoint(narrow-phone) {
+                width: 100%;
+            }
+        }
+
+        .buttons-form {
+
+            .back {
+                float: left;
+                margin-top: 40px;
+                width: 121px;
+                height: 58px;
+                font: normal 15px 'Opan Sans', sans-serif;
+                text-shadow: 0 2px 0 #f6f6f6;
+                color: #696a6a;
+                @include box-shadow(1px 2px 2px 0px #a5a5a5, 0 1px 2px 0 #f6f6f6 inset);
+                @include transition-property(all);
+                @include transition-duration(400ms);
+                &:hover, &:active {
+                    text-shadow: none;
+                    @include box-shadow(none);
+                }
+                @include breakpoint(narrow-phone) {
+                    width: 30%;
+                    max-width: 121px;
+                    height: 50px;
+                }
+            }
+
+            .sign {
+                float: right;
+                margin-top: 40px;
+                width: 245px;
+                height: 58px;
+                border: 1px solid #287fbe;
+                background-color: #52a6e5;
+                font: normal 15px 'Opan Sans', sans-serif;
+                text-shadow: 1px 2px 0 #245e88;
+                color: white;
+                @include border-radius(3px);
+                @include box-shadow(1px 2px 0px 0 #e9eaea, 0 1px 0px 0 rgba(#f6f6f6, 0.7) inset);
+                @include transition-property(all);
+                @include transition-duration(400ms);
+                &:hover, &:active {
+                    text-shadow: none;
+                    @include box-shadow(none);
+                }
+                @include breakpoint(narrow-phone) {
+                    width: 65%;
+                    max-width: 245px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}

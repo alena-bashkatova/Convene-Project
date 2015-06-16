@@ -1,0 +1,106 @@
+.button {
+    display: inline-block;
+    width: 224px;
+    height: 38px;
+    border: 1px solid #babcbd;
+    vertical-align: top;
+    font-family: 'Opan Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    text-shadow: white 2px;
+    color: #494a4a;
+    @include border-radius(0 3px 3px 0);
+    @include background-image(linear-gradient(top, rgba(240,240,240,1) 28%,rgba(204,204,204,1) 100%));
+    @include transition-property(all);
+    @include transition-duration(600ms);
+    &:hover, &:active {
+        background-color: #efefef;
+        background-image: none;
+        color: #494a4a;
+    }
+    &:visited {
+        color: #494a4a;
+    }
+    @include breakpoint(small) {
+        width: 345px;
+        height: 60px;
+        font-size: 20px;
+        line-height: 58px;
+    }
+    @include breakpoint(extra-small) {
+        width: 82%;
+        max-width: 345px;
+        height: 60px;
+        font-size: 20px;
+        line-height: 58px;
+    }
+}
+.social {
+    display: inline-block;
+    width: 48px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    vertical-align: top;
+    @include border-radius(3px 0 0 3px);
+    @include breakpoint(small) {
+        width: 75px;
+        height: 60px;
+    }
+    @include breakpoint(extra-small) {
+        width: 18%;
+        max-width: 75px;
+        height: 60px;
+    }
+}
+.linkedin-button{
+    border: 1px solid #287fbe;
+    background-color: #096495;
+    background-image: url(../../images/getting/in.png);
+    @include breakpoint(narrow-phone) {
+        background-size: 24px;
+    }
+}
+.twitter-button {
+    border: 1px solid #287fbe;
+    background-color: #0ba4e2;
+    background-image: url(../../images/getting/twitter-button.png);
+}
+.facebook-button {
+    border: 1px solid #253c6f;
+    background-color: #38538f;
+    background-image: url(../../images/getting/facebook.png);
+    background-size: 13px 24px;
+    @include breakpoint(small) {
+        background-size: 20px 37px;
+    }
+    @include breakpoint(extra-small) {
+        background-size: 20px 37px;
+    }
+}
+.google-button {
+    border: 1px solid #aa1828;
+    background-color: #cd503d;
+    background-image: url(../../images/getting/google.png);
+    background-size: 14px 26px;
+    @include breakpoint(small) {
+        background-size: 22px 40px;
+    }
+    @include breakpoint(extra-small) {
+        background-size: 22px 40px;
+    }
+}
+.email-button {
+    border: 1px solid #287fbe;
+    background-color: #3d9de1;
+    background-image: url(../../images/getting/email.png);
+    background-size: 24px 24px;
+    @include breakpoint(small) {
+        background-size: 37px 38px;
+    }
+    @include breakpoint(extra-small) {
+        background-size: 37px 38px;
+    }
+}

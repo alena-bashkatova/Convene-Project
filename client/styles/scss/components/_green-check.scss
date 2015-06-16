@@ -1,0 +1,27 @@
+.green-check {
+    background-color: #a0d271;
+
+    &::before {
+        position: absolute;
+        top: 9px;
+        left: 4px;
+        display: block;
+        width: 5px;
+        height: 3px;
+        background-color: white;
+        content: '';
+        @include rotate(45deg);
+    }
+
+    &::after {
+        position: absolute;
+        top: 8px;
+        left: 6px;
+        display: block;
+        width: 10px;
+        height: 3px;
+        background-color: white;
+        content: '';
+        @include rotate(-45deg);
+    }
+}

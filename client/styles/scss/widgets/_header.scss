@@ -1,0 +1,134 @@
+header {
+    .navbar-style {
+        margin: 0;
+        border: none;
+        background: transparent;
+
+        .container {
+            padding: 0 100px;
+            @include breakpoint(small) {
+                padding: 0 30px;
+            }
+            @include breakpoint(extra-small) {
+                padding: 0;
+            }
+            @include breakpoint(narrow-phone) {
+                padding: 0;
+            }
+
+            .button-header {
+                .button-style {
+                    width: 102px;
+                    margin: 0;
+                    padding: 42px 31px 45px 34px;
+                    border: none;
+                    background-color: transparent;
+                    @include border-radius(0);
+                    @include transition-property(all);
+                    @include transition-duration(1000ms);
+                    @include breakpoint(narrow-phone) {
+                        width: 67px;
+                        padding: 25px 15px;
+                    }
+
+                    &:hover, &:active {
+                        background-color: #57baff;
+                        .icon-style {
+                            background-color: white;
+                        }
+                    }
+
+                    .icon-style {
+                        display: block;
+                        width: 37px;
+                        height: 6px;
+                        margin: 5px auto 0;
+                        background-color: #d2d4d4;
+                        @include border-radius(3px);
+                    }
+                }
+
+                img {
+                    width: 228px;
+                    margin-top: 39px;
+                    @include breakpoint(extra-small) {
+                        width: 305px;
+                        margin-top: 35px;
+                        padding-left: 20px;
+                    }
+                    @include breakpoint(narrow-phone) {
+                        width: 200px;
+                        margin-top: 25px;
+                        padding-left: 10px;
+                    }
+                }
+            }
+
+            .collapse-navbar {
+                padding: 0;
+                border: none;
+                //line-height: 120px;
+
+                ul {
+                    margin: 0;
+                    padding: 50px 0;
+                    font-size: 0;
+                    @include breakpoint(extra-small) {
+                        padding: 0;
+                    }
+                    @include breakpoint(narrow-phone) {
+                        padding: 0;
+                    }
+
+                    li {
+                        vertical-align: middle;
+                        font-family: 'Opan Sans',sans-serif;
+                        font-size: 13px;
+                        font-weight: 600;
+                        @include breakpoint(extra-small){
+                            padding: 40px 0;
+                            border-bottom: 4px solid #53b1f2;
+                            background-color: #57baff;
+                        }
+                        @include breakpoint(narrow-phone){
+                            padding: 20px;
+                            border-bottom: 4px solid #53b1f2;
+                            background-color: #57baff;
+                        }
+
+                        a {
+                            color: #061b2a;
+                            @include transition-property(color);
+                            @include transition-duration(400ms);
+                            &:hover, &:active {
+                                color: #676767;
+                            }
+                            @include breakpoint(extra-small) {
+                                font-family: Helvetica, sans-serif;
+                                font-size: 40px;
+                                font-weight: 100;
+                                line-height: 40px;
+                                text-align: center;
+                                color: white;
+                                &:hover, &:active {
+                                    color: #e3e3e3;
+                                }
+                            }
+                            @include breakpoint(narrow-phone) {
+                                font-family: Helvetica, sans-serif;
+                                font-size: 28px;
+                                font-weight: 100;
+                                line-height: 28px;
+                                text-align: center;
+                                color: white;
+                                &:hover, &:active {
+                                    color: #e3e3e3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
